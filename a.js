@@ -62,7 +62,7 @@ function trianguloAsteriscos() {
     alert(asteriscos);
 }
 
-// Función para Nombres con 'A'
+
 function nombresConA() {
     const listaNombres = prompt("Ingresa una lista de nombres separados por coma:");
     const nombres = listaNombres.split(',').map(nombre => nombre.trim());
@@ -70,7 +70,7 @@ function nombresConA() {
     document.body.innerHTML = `<h2>Nombres que comienzan con 'A':</h2><ul>${nombresConA.map(nombre => `<li>${nombre}</li>`).join('')}</ul>`;
 }
 
-// Función para Reemplazar Palabras
+
 function reemplazarPalabras() {
     const texto = prompt("Ingresa un texto:");
     const palabraBuscada = prompt("Ingresa la palabra que deseas reemplazar:");
@@ -79,7 +79,7 @@ function reemplazarPalabras() {
     document.body.innerHTML = `<h2>Texto resultante:</h2><p>${nuevoTexto}</p>`;
 }
 
-// Función para Cortar Texto
+
 function cortarTexto() {
     const texto = prompt("Ingresa un texto:");
     const numeroCaracteres = parseInt(prompt("Ingresa el número de caracteres para cortar:"));
@@ -87,14 +87,14 @@ function cortarTexto() {
     document.body.innerHTML = `<h2>Texto cortado:</h2><p>${textoCortado}</p>`;
 }
 
-// Función para String con Separador
+
 function stringConSeparador() {
     const elementos = prompt("Ingresa una lista de elementos separados por coma:");
     const elementosSeparados = elementos.split(',').map(elemento => elemento.trim()).join(' - ');
     document.body.innerHTML = `<h2>String con separador:</h2><p>${elementosSeparados}</p>`;
 }
 
-// Función para Calculadora de Recaudación
+
 function calculadoraRecaudacion() {
     const pedido = prompt("Ingresa una lista de pedidos en el formato 'nombre:total' separados por coma:");
     const pedidosArray = pedido.split(',').map(pedido => pedido.trim().split(':'));
