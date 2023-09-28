@@ -7,7 +7,7 @@ function calcularEdad() {
     alert(`Hola ${nombre}, tienes ${edad} años!`);
 }
 
-// Función para Tirando Fruta
+
 function tirandoFruta() {
     const frutas = ["manzana", "banana", "naranja", "uva", "pera", "kiwi", "sandía", "durazno", "fresa", "mango"];
     const frutaUsuario = prompt("Ingresa una fruta:");
@@ -19,17 +19,17 @@ function tirandoFruta() {
     }
 }
 
-// Función para Comparando Datos y Tipos
+
 function comparandoDatosTipos() {
-    const resultadoA = 10 == '10'; // Comparación con ==
-    const resultadoB = 10 === '10'; // Comparación con ===
-    const tipoDato = typeof 10.6; // Tipo de dato de 10.6
-    const resultadoC = true == 1; // Comparación de true con 1
+    const resultadoA = 10 == '10'; 
+    const resultadoB = 10 === '10'; 
+    const tipoDato = typeof 10.6; 
+    const resultadoC = true == 1; 
 
     alert(`10 == '10': ${resultadoA}\n10 === '10': ${resultadoB}\nTipo de dato de 10.6: ${tipoDato}\ntrue == 1: ${resultadoC}`);
 }
 
-// Función para Yo Objeto
+
 function objetoCiudad() {
     const ciudad = {
         nombre: "Ciudad Ejemplo",
@@ -43,15 +43,14 @@ function objetoCiudad() {
     }
 }
 
-// Función para Doble de Elementos
+
 function dobleElementos() {
     const numeros = [1, 2, 3, 4, 5];
     const resultado = numeros.map(numero => numero * 2);
     alert(`Array original: [${numeros.join(", ")}]\nDoble de elementos: [${resultado.join(", ")}]`);
 }
 
-// Función para Triángulo de Asteriscos
-function trianguloAsteriscos() {
+function trianguloAsteriscos1() {
     const altura = prompt("Ingresa la altura del triángulo:");
     let asteriscos = '';
 
@@ -62,6 +61,19 @@ function trianguloAsteriscos() {
     alert(asteriscos);
 }
 
+
+function trianguloAsteriscos2() {
+    const altura = prompt("Ingresa la altura del triángulo:");
+    let asteriscos = '';
+
+    for (let i = 1; i <= altura; i++) {
+        const espacios = ' '.repeat(altura - i);
+        const asterisco = '*'.repeat(2 * i - 1);
+        asteriscos += espacios + asterisco + espacios + '\n';
+    }
+
+    alert(asteriscos);
+}
 
 function nombresConA() {
     const listaNombres = prompt("Ingresa una lista de nombres separados por coma:");
