@@ -21,7 +21,7 @@ function tirandoFruta() {
 
 
 function comparandoDatosTipos() {
-    const resultadoA = 10 == '10'; 
+    const resultadoA = 10 == '10'; //
     const resultadoB = 10 === '10'; 
     const tipoDato = typeof 10.6; 
     const resultadoC = true == 1; 
@@ -44,11 +44,7 @@ function objetoCiudad() {
 }
 
 
-function dobleElementos() {
-    const numeros = [1, 2, 3, 4, 5];
-    const resultado = numeros.map(numero => numero * 2);
-    alert(`Array original: [${numeros.join(", ")}]\nDoble de elementos: [${resultado.join(", ")}]`);
-}
+const dobleElementos = [1,2,3,4]
 
 function trianguloAsteriscos1() {
     const altura = prompt("Ingresa la altura del triángulo:");
@@ -122,3 +118,8 @@ function calculadoraRecaudacion() {
     document.body.innerHTML = `<h2>Recaudación Total:</h2><p>${totalRecaudacion.toFixed(2)}</p>`;
 
 }
+
+for (const elemento of dobleElementos) {
+    console.log(elemento);
+    console.log(elemento);
+  }
